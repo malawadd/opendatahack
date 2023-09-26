@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",
-    "deploy:lock": "hardhat run scripts/deploy.ts --network op"
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network op",
+    "deploytoken:testnet": "hardhat run scripts/deployToken.ts --network op"
   },
   "keywords": [],
   "author": "malawadd",
