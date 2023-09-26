@@ -4,17 +4,16 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./Interface/ICurvXErc20.sol";
+import "./Interface/IMunhnaErc20.sol";
 import "hardhat/console.sol";
 
 /**
- * @title CurvX Bonding curve formulas contract for the token vesting
- * @author Gowtham Kumarappan, @nandhabn
- * @notice This contracts helps the CurvX token contract to perform
- * the buy and sell functionality using the bonding curve mechanism.
+ * @title Munhna Bonding munhna formulas contract for the token vesting
+ * @notice This contracts helps the Munhna token contract to perform
+ * the buy and sell functionality using the bonding munhna mechanism.
  */
-contract BondingCurve is Context {
-    error InvalidCurveType();
+contract BondingMunhna is Context {
+    error InvalidMunhnaType();
     error InvalidAmount();
 
     using SafeMath for uint256;
@@ -26,7 +25,7 @@ contract BondingCurve is Context {
     address immutable tokenB;
     uint256 public reserveBalance;
     uint256 public scalingFactor;
-    uint8 public curveType;
+    uint8 public munhnaType;
 
     event Purchase(address indexed buyer, uint256 amount, uint256 cost);
     event Sale(address indexed seller, uint256 amount, uint256 refund);
@@ -35,11 +34,11 @@ contract BondingCurve is Context {
 
     constructor(
         uint256 precision,
-        uint8 _curveType,
+        uint8 _munhnaType,
         address _tokenA,
         address _tokenB
     ) {
-        curveType = _curveType;
+        munhnaType = _munhnaType;
         tokenA = _tokenA;
         tokenB = _tokenB;
         totalSupply = 0;
@@ -54,8 +53,8 @@ contract BondingCurve is Context {
     function calculatePurchaseReturn(
         uint256 _investment
     ) internal view returns (uint256) {
-        if (curveType == 1) {
-            // Linear Curve - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
+        if (munhnaType == 1) {
+            // Linear Munhna - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
             // here m is 1/CURVE_PRECISION
             uint256 newTotal = totalSupply.add(_investment);
 
@@ -68,8 +67,8 @@ contract BondingCurve is Context {
                     .div(scalingFactor)
                     .div(CURVE_PRECISION)
                     .sub(reserveBalance);
-        } else if (curveType == 4) {
-            // Polynomial Curve - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
+        } else if (munhnaType == 4) {
+            // Polynomial Munhna - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
             // here m is 1/CURVE_PRECISION
             uint256 newTotal = totalSupply.add(_investment);
             return
@@ -80,15 +79,15 @@ contract BondingCurve is Context {
                     .sub(reserveBalance)
                     .div(CURVE_PRECISION);
         } else {
-            revert InvalidCurveType();
+            revert InvalidMunhnaType();
         }
     }
 
     function calculateSaleReturn(
         uint256 _amount
     ) internal view returns (uint256) {
-        if (curveType == 1) {
-            // Linear Curve - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
+        if (munhnaType == 1) {
+            // Linear Munhna - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
             // here m is CURVE_PRECISION
             uint256 newTotal = totalSupply.sub(_amount);
             return
@@ -97,8 +96,8 @@ contract BondingCurve is Context {
                         CURVE_PRECISION
                     )
                 );
-        } else if (curveType == 4) {
-            // Polynomial Curve - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
+        } else if (munhnaType == 4) {
+            // Polynomial Munhna - (mx1^2 / 2) - (mx2^2 / 2); x1 > x2
             // here m is CURVE_PRECISION
             uint256 newTotal = totalSupply.sub(_amount);
             return
@@ -110,14 +109,14 @@ contract BondingCurve is Context {
                         .div(CURVE_PRECISION)
                 );
         } else {
-            revert InvalidCurveType();
+            revert InvalidMunhnaType();
         }
     }
 
     function _buy(uint256 amount) internal returns (uint256 priceForToken) {
         priceForToken = calculatePurchaseReturn(amount);
 
-        ICurvXErc20(tokenA).mintAndLock(_msgSender(), amount);
+        IMunhnaErc20(tokenA).mintAndLock(_msgSender(), amount);
         totalSupply += amount;
 
         emit Purchase(msg.sender, amount, priceForToken);
@@ -140,7 +139,7 @@ contract BondingCurve is Context {
     function _sell(uint256 _amount) internal returns (uint256 refund) {
         refund = calculateSaleReturn(_amount);
 
-        ICurvXErc20(tokenA).burn(_msgSender(), _amount);
+        IMunhnaErc20(tokenA).burn(_msgSender(), _amount);
         totalSupply -= _amount;
 
         emit Sale(msg.sender, _amount, refund);
