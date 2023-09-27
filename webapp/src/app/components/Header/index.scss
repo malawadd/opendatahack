@@ -1,0 +1,96 @@
+@import "../../../assets/styles/settings/colors";
+
+.header {
+  background-color: var(--header-color);
+  align-items: center;
+  color: var(--white);
+  height: 80px;
+  display: flex;
+  padding: 0px 37px;
+  justify-content: space-between;
+}
+
+.header-landing-page{
+  background-color: var(--primary-blue);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.nav-items div {
+  padding: 0px 30px;
+}
+
+.header .logo {
+  padding: 0px 70px;
+  width: 250px;
+}
+
+.connect-icon {
+  width: 18px;
+  height: 16px;
+  margin-bottom: 5px;
+}
+
+.nav-items .connect-btn span {
+  padding-left: 10px;
+}
+
+.try-btn {
+  width: 150px;
+  height: 42px;
+  background-color: transparent !important;
+  border: 2px solid var(--white) !important;
+  border-radius: 12px;
+  font-size: 16px;
+  color: var(--white);
+
+  &:hover {
+    color: var(--black) !important;
+    background-color: var(--primary-lemon) !important;
+    border-color: var(--primary-lemon) !important;
+  }
+}
+
+.connect-btn {
+  font-family: "SchibstedGrotesk" !important;
+  font-size: 16px;
+  color: var(--primary-blue);
+  height: 40px;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--black) !important;
+    background-color: var(--primary-lemon) !important;
+    border-color: var(--primary-lemon) !important;
+  }
+}
+
+.dot {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  padding: 0px !important;
+}
+
+.testnet {
+  background-color: #40ff00;
+}
+
+.mainnet {
+  background-color: #ff0040;
+}
+
+.network {
+  display: flex;
+  margin-bottom: -17px;
+}
+
+.name {
+  margin-left: 5px;
+  margin-top: -4px;
+}

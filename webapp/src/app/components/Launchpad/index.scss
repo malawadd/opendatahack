@@ -1,0 +1,186 @@
+.launchpad-section {
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.launchpad-box {
+  background-color: var(--white);
+  width: 700px;
+  border-radius: 12px;
+}
+
+.description-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 627px;
+  background: rgba(255, 253, 2, 0.1);
+  border: 1px solid rgba(193, 145, 31, 0.2);
+  border-radius: 12px;
+  padding: 2%;
+}
+
+.mint-tokens {
+  margin: 5%;
+}
+
+.description-title {
+  font-size: 17px;
+  font-family: "SchibstedGrotesk-Bold";
+  margin: 0px;
+}
+
+.description-content {
+  font-size: 15px;
+  font-family: "SchibstedGrotesk";
+}
+
+.launchpad-contents {
+  padding: 0px 32px;
+}
+
+.details-title {
+  font-size: 18px;
+  font-family: "SchibstedGrotesk-Bold";
+  margin-bottom: 10px;
+}
+
+.input-description {
+  font-size: 10;
+  color: var(--text-4);
+}
+
+.ant-upload {
+  background-color: var(--white);
+}
+
+.other-details-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.other-details-section .input-box {
+  width: 203px;
+}
+
+.form-fields {
+  display: flex;
+  gap: 12px;
+}
+
+.price-estimation {
+  padding: 12px 16px;
+  background: rgba(107, 210, 142, 0.1);
+  border: 1px solid var(--primary-green);
+  border-radius: 12px;
+}
+
+.price-text {
+  font-family: "SchibstedGrotesk";
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  opacity: 0.8;
+  line-height: 15px;
+}
+
+.mint-button {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 12px;
+  background: var(--primary-lemon);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "SchibstedGrotesk";
+
+  &:hover {
+    color: var(--primary-blue) !important;
+    background-color: var(--primary-lemon) !important;
+    border-color: var(--primary-lemon) !important;
+  }
+}
+
+.curve-section {
+  width: 627px;
+  margin-top: 24px;
+  margin: 24px 0px -50px 0px;
+  min-height: 380px;
+  background: rgba(230, 230, 230, 0.32);
+  border-radius: 14px;
+}
+
+.select-option {
+  margin: 14px 0px 0px 14px;
+  border: 1px solid var(--white-4);
+  border-radius: 12px;
+  padding: 6px 7px 8px 7px;
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border: none;
+  box-shadow: none !important;
+}
+
+.vesting-option {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.modal-title {
+  margin-top: 35px;
+  margin-left: 11px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #3d3d3d;
+  font-family: "SchibstedGrotesk";
+}
+
+.modal-description {
+  margin-top: 10px;
+}
+
+.approve-modal.ant-modal .ant-modal-content {
+  background: var(--primary-blue);
+}
+
+.approve-modal.ant-modal .ant-modal-title {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.approve-modal.ant-modal .ant-modal-content .modal-content {
+  width: 480px;
+  height: 150px;
+  background: var(--white);
+  border-radius: 16px;
+}
+
+.approve-modal.ant-modal .ant-modal-close-x {
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.select-option.ant-select.ant-select-in-form-item {
+  width: 150px;
+}
+
+.curve-section .graph {
+  padding: 14px 50px;
+}
+
+.hash {
+  font-size: 13px;
+  text-align: center;
+}
