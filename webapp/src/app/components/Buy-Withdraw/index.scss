@@ -1,0 +1,42 @@
+.buy-column-2 {
+  background-color: var(--light-blue);
+  height: 380px;
+  width: 536px;
+  border-radius: 12px;
+  padding: 2%;
+  margin-left: 62px;
+}
+
+.buy-button {
+  width: 240px;
+  height: 52px;
+  margin-top: 65px;
+  background-color: var(--primary-lemon) !important;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--primary-blue);
+  border-radius: 12px;
+
+  &:hover {
+    color: var(--primary-blue) !important;
+    background-color: var(--white) !important;
+    border-color: var(--white) !important;
+  }
+}
+
+.price-chips {
+  margin-top: 10px;
+}
+
+.buy-column-2 label {
+  color: var(--white);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  color: var(--primary-lemon);
+  font-size: 12px;
+}
