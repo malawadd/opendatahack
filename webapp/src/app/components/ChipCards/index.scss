@@ -1,0 +1,106 @@
+.chip-card {
+  display: flex;
+  width: 358px;
+  height: 110px;
+  background-color: var(--light-blue);
+  border-radius: 12px;
+  padding: 25px;
+  margin-right: 15px;
+}
+
+.card-value {
+  font-family: "SchibstedGrotesk-Bold";
+  color: var(--white);
+  font-size: 28px;
+}
+
+.card-title {
+  font-family: "SchibstedGrotesk-Medium";
+  font-size: 14px;
+  color: var(--white);
+  opacity: 60%;
+}
+
+.sub-title {
+  font-family: "SchibstedGrotesk";
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--gray-30);
+  margin: 22px 0px 0px 0px;
+}
+
+.modal-props {
+  display: flex;
+  height: 42px;
+}
+
+.modal-props .input-box {
+  width: 57px;
+  height: 32px;
+  padding: 10px;
+  border: 1px solid var(--text-4);
+  border-radius: 24px;
+  margin-right: 10px;
+}
+
+.slipage .ant-radio-button-wrapper {
+  border: 1px solid var(--text-4);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.slipage .ant-radio-button-wrapper:not(:first-child)::before {
+  height: 0px;
+  width: 0px;
+}
+
+.input-tab {
+  margin-right: 5px;
+}
+
+.slipage
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: var(--gray-30);
+  background: rgba(47, 62, 206, 0.08);
+  border-color: var(--primary-blue);
+}
+
+.slipage
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover {
+  color: var(--gray-30);
+  background: rgba(47, 62, 206, 0.08);
+  border-color: var(--primary-blue);
+}
+
+.ant-modal .ant-modal-title {
+  color: var(--gray-30);
+  font-family: "SchibstedGrotesk";
+  font-weight: 400;
+}
+
+.label {
+  margin: 0px 0px 2px 227px;
+  font-size: 10px;
+  color: var(--white-4);
+  font-family: "SchibstedGrotesk";
+}
+
+.image-curser {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.image-size {
+  width: 24px;
+  height: 24px;
+  padding-left: 2px;
+}
+
+.slippage-modal{
+  margin-right: 10px;
+}

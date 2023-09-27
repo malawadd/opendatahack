@@ -1,0 +1,49 @@
+.ant-tabs-nav {
+  background-color: var(--primary-blue);
+  border: 1px solid var(--white-2);
+  align-items: center;
+  border-radius: 50px;
+  width: 620px;
+  font-family: "SchibstedGrotesk";
+  height: 52px;
+}
+
+.ant-tabs-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.ant-tabs-tab {
+  color: var(--white);
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 20px;
+  width: 180px;
+  height: 38px;
+}
+
+.icon .anticon svg {
+  margin-bottom: 7px;
+}
+
+.ant-tabs-content-holder {
+  color: var(--text-1);
+  align-items: center;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  background-color: var(--primary-lemon);
+}
+
+.ant-tabs-ink-bar {
+  display: none;
+}
+
+.ant-tabs-nav::before,
+.ant-tabs-nav::after {
+  display: none;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--black);
+}

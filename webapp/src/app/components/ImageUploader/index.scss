@@ -1,0 +1,35 @@
+.upload-preview {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 145px;
+  height: 145px;
+  border: dotted 5px var(--text-4);
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.upload-btn {
+  width: 129px;
+  height: 42px;
+  border: solid 2px;
+  border-radius: 12px;
+  color: var(--primary-blue);
+  font-size: larger;
+  border-color: var(--primary-blue);
+  background-color: transparent;
+}
+
+.preview-text {
+  color: var(--text-4);
+  align-self: center;
+}
+
+.upload-section {
+  justify-content: space-between;
+}
+
+.upload-description {
+  color: var(--text-4);
+  width: 360px;
+}

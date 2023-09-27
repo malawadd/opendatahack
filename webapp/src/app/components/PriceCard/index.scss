@@ -1,0 +1,20 @@
+.price-card {
+  width: 516px;
+  height: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: var(--white);
+  margin-bottom: 20px;
+}
+
+.price-card-group {
+  width: fit-content;
+}
+
+.balance-text {
+  font-weight: 600;
+  color: var(--text-3);
+  span {
+    color: "#3f57d0";
+  }
+}
