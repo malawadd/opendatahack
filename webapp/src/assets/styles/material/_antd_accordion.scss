@@ -1,0 +1,22 @@
+.ant-collapse {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    .ant-collapse-item {
+        margin-bottom: 4px;
+        border: 1px solid var(--grey-light1);
+        overflow: hidden;
+        .ant-collapse-header {
+            background-color: transparent;
+            border: 1px solid transparent;
+            &:hover {
+                background-color: var(--secondary-10);
+                border: 1px solid var(--secondary-40);
+            }
+        }
+    }
+}
+
+.ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    border-radius: 0 0 10px 10px;
+}

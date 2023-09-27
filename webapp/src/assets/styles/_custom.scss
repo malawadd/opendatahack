@@ -1,0 +1,260 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ClashDisplay-bold";
+  src: url("../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Bold.woff");
+}
+
+@font-face {
+  font-family: "ClashDisplay-medium";
+  src: url("../fonts//ClashDisplay//Fonts/WEB/fonts/ClashDisplay-Medium.woff");
+}
+
+@font-face {
+  font-family: "SchibstedGrotesk";
+  src: url("../fonts/Schibsted_Grotesk/static/SchibstedGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SchibstedGrotesk-Bold";
+  src: url("../fonts/Schibsted_Grotesk/static/SchibstedGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SchibstedGrotesk-Medium";
+  src: url("../fonts/Schibsted_Grotesk/static/SchibstedGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ClashDisplay-SemiBold";
+  src: url("../fonts/Schibsted_Grotesk/static/SchibstedGrotesk-SemiBold.ttf");
+}
+
+html {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: -webkit-fill-available;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif !important;
+  color: var(--text-1);
+  background: var(--primary-bg-1) !important;
+  overflow-x: hidden;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: -webkit-fill-available;
+}
+
+html,
+body,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  word-break: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+  outline: none;
+  color: var(--text-1);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  outline-color: transparent;
+  appearance: none;
+}
+
+button:focus,
+button > .focus {
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+//resize property styles
+
+.resize {
+  &-none {
+    resize: none;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
+.ant-select-clear,
+.ant-input-clear-icon {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  .anticon-close-circle {
+    vertical-align: unset;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

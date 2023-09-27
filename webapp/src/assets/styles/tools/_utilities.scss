@@ -1,0 +1,58 @@
+@import '../settings/colors';
+
+//Font Size
+$fontSizeConfig: 8, 12, 14, 16, 20, 24, 32;
+@each $font in $fontSizeConfig {
+  .f-#{nth($font, 1)} {
+    font-size: #{nth($font, 1)}px !important;
+  }
+}
+
+//Font-weight
+$fontWeightConfig: 200, 300, 400, 500, 600, 700, 800;
+@each $weight in $fontWeightConfig {
+  .f-w-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+//Line-height
+$lineHeightConfig: 16, 24;
+@each $height in $lineHeightConfig {
+  .l-h-#{nth($height, 1)} {
+    line-height: #{nth($height, 1)}px;
+  }
+}
+.l-h {
+  &-normal {
+    line-height: normal;
+  }
+}
+
+.max-w {
+  &-200 {
+    max-width: 200px;
+  }
+  &-250 {
+    max-width: 250px;
+  }
+  &-300 {
+    max-width: 300px;
+  }
+  &-500 {
+    max-width: 500px;
+  }
+}
+
+// color
+$textColors: 'primary' var(--primary-100), 'text-1' var(--text-1), 'text-2' var(--text-2), "white" #fff, "black" #000;
+
+@each $color in $textColors {
+  .txt-#{nth($color, 1)} {
+    color: nth($color, 2) !important;
+  }
+}
+
+.p-2px {
+  padding: 2px !important;
+}

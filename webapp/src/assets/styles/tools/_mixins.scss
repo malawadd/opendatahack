@@ -1,0 +1,308 @@
+//Position
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin positionFull($position, $value) {
+  position: $position;
+  top: $value;
+  right: $value;
+  bottom: $value;
+  left: $value;
+}
+
+@mixin positionLeftRight($position, $left, $right) {
+  position: $position;
+  left: $left;
+  right: $right;
+}
+
+@mixin positionTopRight($position, $top, $right) {
+  position: $position;
+  top: $top;
+  right: $right;
+}
+
+@mixin positionTopLeft($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+@mixin positionBottomLeft($position, $bottom, $left) {
+  position: $position;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin positionBottomRight($position, $bottom, $right) {
+  position: $position;
+  bottom: $bottom;
+  right: $right;
+}
+
+//Font
+
+@mixin font($size, $lineHeight, $weight, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-space($size, $lineHeight, $weight, $letter-space, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  letter-spacing: $letter-space;
+  color: $color;
+}
+
+@mixin font-height($size, $lineHeight, $color) {
+  font-size: $size;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin font-weight($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin icon($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin icon-line($size, $line-height, $color) {
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
+
+//Button Color
+
+@mixin button-color($color, $background, $border-color) {
+  color: $color;
+  background-color: $background;
+  border-color: $border-color;
+}
+
+//Placeholder
+
+@mixin placeholder-font($size, $lineHeight, $weight, $space, $color) {
+  &::placeholder {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $space;
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $space;
+    color: $color;
+  }
+  &::-moz-placeholder {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $space;
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $space;
+    color: $color;
+  }
+  &:-moz-placeholder {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+    letter-spacing: $space;
+    color: $color;
+  }
+}
+
+@mixin placeholder-style() {
+  &::placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+}
+
+//Size
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin sizing($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//Image
+
+@mixin imagePosition($size, $position, $fit) {
+  @include size($size);
+  object-position: $position;
+  object-fit: $fit;
+}
+
+//animation
+
+@mixin animateDelay($sec) {
+  -webkit-animation-delay: $sec;
+  -moz-animation-delay: $sec;
+  -ms-animation-delay: $sec;
+  -o-animation-delay: $sec;
+  animation-delay: $sec;
+}
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg); /* IE 9 */
+  -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin rotating($animation, $sec) {
+  -webkit-animation: $animation $sec linear infinite;
+  -moz-animation: $animation $sec linear infinite;
+  -ms-animation: $animation $sec linear infinite;
+  -o-animation: $animation $sec linear infinite;
+  animation: $animation $sec linear infinite;
+}
+
+@mixin flexCenter($display, $alignItem, $justifyContent) {
+  display: $display;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin ease-in($sec) {
+  -webkit-transition: all $sec ease-in-out;
+  -moz-transition: all $sec ease-in-out;
+  -ms-transition: all $sec ease-in-out;
+  -o-transition: all $sec ease-in-out;
+  transition: all $sec ease-in-out;
+}
+
+//Filter Property
+
+@mixin background-blur($blur) {
+  -webkit-backdrop-filter: blur($blur);
+  -moz-backdrop-filter: blur($blur);
+  -ms-backdrop-filter: blur($blur);
+  -o-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+}
+
+//appearance
+
+@mixin appearance($appearance) {
+  -webkit-appearance: $appearance;
+  -moz-appearance: $appearance;
+  appearance: $appearance;
+  outline: $appearance;
+}
+
+//User-select
+
+@mixin userSelect($select) {
+  -webkit-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+//Responsive
+
+@mixin only-exlarge-device {
+  @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin only-large-device {
+  @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin only-medium-device {
+  @media only screen and (min-width: 1024px) and (max-width: 1270px) {
+    @content;
+  }
+}
+
+@mixin only-small-device {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin only-for-mobile {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Max Width responsive
+
+@mixin exlarge-device-below {
+  @media only screen and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin large-device-below {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin medium-device-below {
+  @media only screen and (max-width: 1270px) {
+    @content;
+  }
+}
+
+@mixin small-device-below {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-tab-below {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-below {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}

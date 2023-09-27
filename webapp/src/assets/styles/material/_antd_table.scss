@@ -1,0 +1,29 @@
+.accordion-table {
+  .ant-table-content {
+    border: 1px solid var(--grey-light2);
+    border-radius: 4px;
+    overflow: hidden;
+    table {
+      tr {
+        th {
+          font-weight: 600;
+          &::before {
+            content: none !important;
+          }
+        }
+        .ant-table-cell {
+          border: 1px solid var(--grey-light2);
+          &:first-child {
+            width: 30%;
+          }
+          &:nth-child(2) {
+            width: 25%;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

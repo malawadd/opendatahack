@@ -1,0 +1,55 @@
+@import '../settings/colors';
+
+.ant-picker {
+    &.ant-picker-range {
+        padding: 4px 12px 4px 0;
+        .ant-picker-input {
+            input {
+                text-align: center;
+            }
+        }
+        &.ant-picker-focused {
+            .ant-picker-active-bar {
+                margin-left: 0;
+                height: 100%;
+                bottom: 0;
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
+.ant-picker-dropdown {
+    .ant-picker-range-wrapper {
+        .ant-picker-panel-container {
+            display: flex;
+            flex-direction: row-reverse;
+            .ant-picker-footer {
+                min-width: 120px;
+                border-right: 1px solid var(--grey-light1);
+                .ant-picker-ranges {
+                    padding: 0;
+                    .ant-picker-preset {
+                        display: block;
+                        border-bottom: 1px solid var(--grey-light1);
+                        .ant-tag {
+                            padding: 12px 10px;
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: normal;
+                            color: var(--text-1);
+                            background: transparent;
+                            border: none;
+                            margin: 0;
+                            &:hover {
+                                background-color: var(--grey-light4);
+                                color: var(--primary-100);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
