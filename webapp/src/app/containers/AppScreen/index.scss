@@ -1,0 +1,11 @@
+.main-container {
+    background-color: var(--primary-blue);
+    padding: 24px;
+    min-height: calc(100vh - 80px);
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

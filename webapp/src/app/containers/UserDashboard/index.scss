@@ -1,0 +1,88 @@
+.tables {
+  display: flex;
+  margin: 25px 100px 0px 100px;
+  justify-content: space-between;
+}
+
+.tables .title {
+  font-family: "ClashDisplay-medium";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.wallet-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.banner-section {
+  display: flex;
+  margin: 80px 100px 20px 100px;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.details {
+  padding: 50px 0px 0px 44px;
+  position: absolute;
+}
+
+.wallet {
+  display: flex;
+  gap: 16px;
+}
+
+.address {
+  font-family: "SchibstedGrotesk";
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.value {
+  font-family: "SchibstedGrotesk";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--white);
+}
+
+.balance {
+  display: flex;
+  padding-top: 19px;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.balance .section {
+  display: flex;
+  gap: 10px;
+}
+
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 2px 0px;
+  width: 530px;
+}
+
+.dashboard-loading {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

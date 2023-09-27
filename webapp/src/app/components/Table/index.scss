@@ -1,0 +1,45 @@
+@import "../../../assets/styles/custom";
+
+.ant-table {
+  border: 1px solid rgba(78, 90, 212, 0.1);
+  border-radius: 15px;
+}
+
+.ant-table-content {
+  overflow-x: auto !important;
+}
+
+.ant-table-body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--white-smoke);
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--white-smoke);
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--white-smoke);
+}
+
+.tag {
+  border-radius: 10px;
+}
+
+.ant-table-thead .ant-table-cell {
+  color: var(--white-4) !important;
+  font-family: "SchibstedGrotesk";
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.deployed-token-table {
+  width: 1081px !important;
+}
+
+.claimable-token-table {
+  width: 529px !important;
+}
