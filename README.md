@@ -21,6 +21,7 @@
   <a href="#munhna-bounding-curves">Munhna bounding curves</a> •
   <a href="#credits ">Credits </a> •
   <a href="#demo ">Video Demo </a> •
+  <a href="#contract-address ">Contract Address  </a> •
   <a href="#license">License</a>
 </p>
 
@@ -107,6 +108,11 @@ Munhna uses the following open source packages:
 
 https://youtu.be/-NC0ClMOBp0
 
+## Contract Address 
+
+- Munhna Factory : [0x3553826535d149c9a4441f8928847970c05e8115](https://fvm.starboard.ventures/calibration/explorer/address/0x3553826535d149c9a4441f8928847970c05e8115)
+
+- Munhna Token : [0xB11011307e0F3c805387c10aa69F874244b1bec3](https://fvm.starboard.ventures/calibration/explorer/address/0xB11011307e0F3c805387c10aa69F874244b1bec3)
 
 ## License
 
