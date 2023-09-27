@@ -116,7 +116,7 @@ const LaunchPad = () => {
       precision: values.precision,
       curveType: Number(values.curveType),
       pairToken: pair,
-      logoURL: values.fileIpfsUrl,
+      logoURL: "values.fileIpfsUrl",
       salt: ethers.utils.solidityKeccak256(
         ['uint256'],
         [Math.floor(Math.random() * 1000000000)]

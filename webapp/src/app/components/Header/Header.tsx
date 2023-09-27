@@ -85,7 +85,7 @@ const Header = () => {
       <div className="nav-items">
         {location.pathname === homepage ? (
           <>
-            <a href="https://testtoken-delta.vercel.app/" target="blank" style={{ textDecoration: "none", color: "#ffffff" }} rel="noreferrer">Mint Test token</a>
+           
             <div>About</div>
             <div>
               <Link style={{ textDecoration: "none" }} to={dashboard}>
