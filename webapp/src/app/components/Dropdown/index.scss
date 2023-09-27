@@ -1,0 +1,23 @@
+.option-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.optionStyle {
+    display: 'flex';
+    align-items: center;
+}
+
+.select-input {
+    width: 120px;
+}
+
+.ant-select-selector {
+    background-color: var(--gray-6) !important;
+    border: none !important;
+}
+
+.ant-select-arrow {
+    color: var(--black) !important;
+}

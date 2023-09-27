@@ -1,0 +1,77 @@
+@import "../../../assets/styles/settings/colors";
+@import "../../../assets/styles/custom";
+
+.footer {
+  padding: 54px 174px;
+  height: 349px;
+}
+
+.footer .container1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.foo-content {
+  width: 363px;
+  font-family: "SchibstedGrotesk";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--gray-30);
+}
+
+.foo-sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.copy-right {
+  font-family: "SchibstedGrotesk";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray-30);
+}
+
+.foo-sec2 {
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 20px;
+  gap: 108px;
+  color: var(--gray-30);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-logo {
+  width: 182px;
+}
+
+.foo-sec2 .title {
+  color: var(--black);
+  font-family: "ClashDisplay-bold";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+ul li {
+  margin: 0 0 16px 0;
+  font-family: "SchibstedGrotesk";
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.foo-sec2 a {
+  text-decoration: none;
+  color: var(--gray-30);
+}
